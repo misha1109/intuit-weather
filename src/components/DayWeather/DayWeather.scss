@@ -1,0 +1,22 @@
+.weather-card {
+  width: fit-content;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  border: 2px solid #0dcaf0;
+  border-radius: 1.25rem;
+  p {
+    font-weight: 600;
+    margin: 3px;
+  }
+  img {
+    width: 130px;
+  }
+  .weather-temp {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

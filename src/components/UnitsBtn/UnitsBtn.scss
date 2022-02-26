@@ -1,0 +1,16 @@
+
+.units-btn-container {
+  text-align: center;
+  input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 4px;
+    appearance: none;
+    &:checked {
+      background: no-repeat center #0d6efd;
+    }
+  }
+}
