@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d074250-f76c-4f10-8641-52f16fbca2a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/CityInput/CityInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CityInput/CityInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DayWeather/DayWeather.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DayWeather/DayWeather.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/http.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/http.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/weather.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/weather.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/http.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/http.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645472894726</updated>
       <workItem from="1645472895749" duration="3385000" />
-      <workItem from="1645784481485" duration="29912000" />
+      <workItem from="1645784481485" duration="30561000" />
     </task>
     <servers />
   </component>
@@ -66,10 +64,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="825" y="436" key="#ESLint/0.0.1920.1080/-1920.25.1920.1055@0.0.1920.1080" timestamp="1645815846940" />
-    <state x="659" y="266" width="602" height="548" key="find.popup" timestamp="1645868293819">
+    <state x="689" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1645868759165">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="659" y="266" width="602" height="548" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1645868293819" />
+    <state x="689" y="346" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1645868759165" />
+    <state x="659" y="266" width="602" height="548" key="find.popup" timestamp="1645868350987">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="659" y="266" width="602" height="548" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1645868350987" />
     <state x="659" y="266" width="602" height="548" key="find.popup/-1920.25.1920.1055/0.0.1920.1080@0.0.1920.1080" timestamp="1645863834704" />
     <state x="659" y="266" width="602" height="548" key="find.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1645817673628" />
     <state x="659" y="266" width="602" height="548" key="find.popup/0.0.1920.1080/-1920.25.1920.1055@0.0.1920.1080" timestamp="1645815835121" />

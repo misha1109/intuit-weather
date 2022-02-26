@@ -1,8 +1,14 @@
 # Intuit Weather
 
 ## Run the project
+### dev build
 npm install\
 npm start
+
+### prod build
+npm i -g serve\
+npm run build\
+serve -s build
 ## Available Scripts
 
 In the project directory, you can run:
