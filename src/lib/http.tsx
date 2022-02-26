@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {HttpError, HttpResponse} from "../models/http.interface";
+import {HttpResponse} from "../models/http.interface";
 
 export const http = {
     get: async (url: string, params?: Record<string, any>): Promise<HttpResponse> => {

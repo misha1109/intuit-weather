@@ -1,4 +1,4 @@
-import React, {ChangeEvent, ChangeEventHandler, FormEventHandler} from "react";
+import React, {ChangeEvent, FormEventHandler} from "react";
 import './CityInput.scss';
 
 const CityInput: React.FC<{onSubmit: FormEventHandler<HTMLFormElement>, onChange:  (e: ChangeEvent<HTMLInputElement>) => void, city: string}> = ({onSubmit, onChange, city}) => {

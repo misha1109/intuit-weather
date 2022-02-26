@@ -6,7 +6,7 @@ import {
 const OPEN_WEATHER = {
     apiKey: '818ee64b41517259790fb824a5e74bd2',  // obviously there shouldn't be an api key as part of the source code..
     urls: {
-        base: 'http://api.openweathermap.org/',
+        base: 'https://api.openweathermap.org/',
         geo: 'geo/1.0/direct',
         forecast: 'data/2.5/onecall',
     },

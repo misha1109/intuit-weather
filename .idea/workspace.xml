@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d074250-f76c-4f10-8641-52f16fbca2a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/CityInput/CityInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CityInput/CityInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DayWeather/DayWeather.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DayWeather/DayWeather.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/http.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/http.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/weather.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/weather.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/http.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/http.interface.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="25Qx1GVqKlJQtbfiDUDYs0u62iQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src/lib" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d074250-f76c-4f10-8641-52f16fbca2a0" name="Default Changelist" comment="" />
+      <created>1645472894726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645472894726</updated>
+      <workItem from="1645472895749" duration="3385000" />
+      <workItem from="1645784481485" duration="29912000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="825" y="436" key="#ESLint" timestamp="1645815846940">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="825" y="436" key="#ESLint/0.0.1920.1080/-1920.25.1920.1055@0.0.1920.1080" timestamp="1645815846940" />
+    <state x="659" y="266" width="602" height="548" key="find.popup" timestamp="1645868293819">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="659" y="266" width="602" height="548" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1645868293819" />
+    <state x="659" y="266" width="602" height="548" key="find.popup/-1920.25.1920.1055/0.0.1920.1080@0.0.1920.1080" timestamp="1645863834704" />
+    <state x="659" y="266" width="602" height="548" key="find.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1645817673628" />
+    <state x="659" y="266" width="602" height="548" key="find.popup/0.0.1920.1080/-1920.25.1920.1055@0.0.1920.1080" timestamp="1645815835121" />
+    <state x="744" y="318" key="refactoring.ChangeSignatureDialog" timestamp="1645787301019">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="744" y="318" key="refactoring.ChangeSignatureDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1645787301019" />
+    <state x="2481" y="211" width="670" height="676" key="search.everywhere.popup" timestamp="1645476807448">
+      <screen x="1920" y="-40" width="1792" height="1120" />
+    </state>
+    <state x="2481" y="211" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/1920.-40.1792.1120@1920.-40.1792.1120" timestamp="1645476807448" />
+  </component>
+</project>

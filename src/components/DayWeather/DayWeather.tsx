@@ -14,7 +14,7 @@ const DayWeather: React.FC<{dailyWeather: Daily, units: WeatherUnits}> = ({daily
         <div className="weather-card">
             <p>{day}</p>
             <p>{calendar}</p>
-            <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`}/>
+            <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={`weather for ${day}`}/>
             <div className="weather-temp">{calculatedTemp}<span>°{unitSign}</span></div>
         </div>
     );
