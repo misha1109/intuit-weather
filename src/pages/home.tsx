@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from "react";
 import { useParams, useHistory} from 'react-router-dom';
 
-import {Forecasts, WeatherUnits} from "../models/weatherComponents.interface";
+import {ForecastsViewerData} from "../models/weatherComponents.interface";
 import {getDailyForecastByCityName} from "../lib/weather";
 import CityInput from "../components/CityInput/CityInput";
-import UnitsBtn from "../components/UnitsBtn/UnitsBtn";
-import FeaturedTodayWeather from "../components/FeaturedTodayWeather/FeaturedTodayWeather";
-import WeeklyWeather from "../components/WeeklyWeather/WeeklyWeather";
+import ForecastViewer from '../components/ForecastViewer/ForecastsViewer';
 
 function Home() {
     const {cityParam} = useParams<{cityParam: string}>();
@@ -17,17 +15,20 @@ function Home() {
     }, [])
 
     const [cityName, setCityName] = useState(cityParam || '');
-    const [forecasts, setForecasts] = useState<Forecasts>();
-    const [units, setUnits] = useState<WeatherUnits>('fahrenheit');
+    const [weatherData, setForecasts] = useState<ForecastsViewerData>();
     const [apiErrorMessage, setApiError] = useState<string>('');
 
     const initForecasts = async (city: string): Promise<void> => {
         const forecasts = await getDailyForecastByCityName(city);
 
-        if (forecasts.length) {
+        const {daily, coordinates} = forecasts;
+        if (daily.length) {
             setForecasts({
-                today: forecasts[0],
-                weekly: forecasts.slice(1)
+                forecasts: {
+                    today: daily[0],
+                    weekly: daily.slice(1)
+                },
+                coordinates
             })
             setApiError('');
         } else {
@@ -47,20 +48,13 @@ function Home() {
                         initForecasts(cityName);
                     }}
                 />
-                <UnitsBtn
-                    units={units}
-                    onChange={(e) => setUnits(e.target.value as WeatherUnits)}
-                />
             </div>
             <div className="forecasts-container">
                 {
                     apiErrorMessage
                     ? <div>{apiErrorMessage}</div>
-                    : forecasts
-                    ? <div>
-                        <FeaturedTodayWeather dailyWeather={forecasts.today} units={units}/>
-                        <WeeklyWeather weeklyWeather={forecasts.weekly} units={units}/>
-                      </div>
+                    : weatherData
+                    ? <ForecastViewer weatherData={weatherData}/>
                     : <div>Enter city name and submit to view forecast</div>
                 }
             </div>

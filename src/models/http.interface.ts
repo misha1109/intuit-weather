@@ -1,3 +1,3 @@
-export interface HttpResponse {
-    data: any;
+export interface HttpResponse<T> {
+    data: T;
 }

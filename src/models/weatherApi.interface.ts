@@ -10,6 +10,12 @@ export interface Coordinates {
     lon: number
 }
 
+export interface DailyForecastResponse extends Coordinates {
+    timezone: string;
+    timezone_offset: number;
+    daily: Daily[];
+}
+
 export interface Temp {
     day: number;
     min: number;
