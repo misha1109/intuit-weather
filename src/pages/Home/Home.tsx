@@ -1,9 +1,10 @@
 import React, {useState, useEffect, ReactElement, FormEvent} from "react";
 import { useParams, useHistory} from 'react-router-dom';
 
-import {getDailyForecastByCityName} from "../lib/weather";
-import CityInput from "../components/CityInput/CityInput";
-import ForecastViewer from '../components/ForecastViewer/ForecastsViewer';
+import './Home.scss';
+import {getDailyForecastByCityName} from "../../lib/weather";
+import CityInput from "../../components/CityInput/CityInput";
+import ForecastViewer from '../../components/ForecastsViewer/ForecastsViewer';
 
 function Home() {
     const {cityParam} = useParams<{cityParam: string}>();
@@ -41,6 +42,7 @@ function Home() {
 
     return (
         <div>
+            <h2 className="title">Intuit Weather App</h2>
             <div className="search-container">
                 <CityInput
                     city={cityName}

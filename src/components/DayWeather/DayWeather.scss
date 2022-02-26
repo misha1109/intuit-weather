@@ -6,8 +6,10 @@
   flex-direction: column;
   min-width: 0;
   background-color: #fff;
-  border: 2px solid #0dcaf0;
-  border-radius: 1.25rem;
+  color: rgb(102, 112, 133);
+  box-shadow: rgb(16 24 40 / 30%) 0px 0.5px 2px;
+  border-radius: 8px;
+  padding: 5px;
   p {
     font-weight: 600;
     margin: 3px;
@@ -16,7 +18,14 @@
     width: 130px;
   }
   .weather-temp {
-    font-weight: 700;
-    font-size: 20px;
+    padding: 6px 12px;
+    background: rgb(242, 244, 247);
+    color: rgb(71, 84, 103);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 6px;
+    text-align: center;
+    margin-right: 8px;
   }
 }

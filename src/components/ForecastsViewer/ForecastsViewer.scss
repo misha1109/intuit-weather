@@ -1,0 +1,26 @@
+.coordinates {
+  font-weight: bold;
+  line-height: 18px;
+  margin: 20px auto;
+  width: fit-content;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  grid-gap: 1rem;
+  gap: 1rem;
+  color: #98a2b3;
+  background: #fcfcfd;
+  box-shadow: rgb(16 24 40 / 30%) 0px 0.5px 2px;
+  border-radius: 8px;
+  max-width: 350px;
+  p {
+    margin: 1px 0;
+    font-size: 14px;
+  }
+  h4 {
+    margin: 2px 0;
+    font-size: 18px;
+  }
+}
