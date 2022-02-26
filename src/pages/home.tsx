@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, ReactElement, FormEvent} from "react";
 import { useParams, useHistory} from 'react-router-dom';
 
-import {ForecastsViewerData} from "../models/weatherComponents.interface";
 import {getDailyForecastByCityName} from "../lib/weather";
 import CityInput from "../components/CityInput/CityInput";
 import ForecastViewer from '../components/ForecastViewer/ForecastsViewer';
@@ -9,32 +8,36 @@ import ForecastViewer from '../components/ForecastViewer/ForecastsViewer';
 function Home() {
     const {cityParam} = useParams<{cityParam: string}>();
     const history = useHistory();
+    const [cityName, setCityName] = useState(cityParam || '');
+    const [forecastElement, setForecastElement] = useState<ReactElement>(<div>Enter city name and submit to view forecast</div>);
 
     useEffect(() => {
         if (cityParam) initForecasts(cityName);
     }, [])
-
-    const [cityName, setCityName] = useState(cityParam || '');
-    const [weatherData, setForecasts] = useState<ForecastsViewerData>();
-    const [apiErrorMessage, setApiError] = useState<string>('');
 
     const initForecasts = async (city: string): Promise<void> => {
         const forecasts = await getDailyForecastByCityName(city);
 
         const {daily, coordinates} = forecasts;
         if (daily.length) {
-            setForecasts({
+            const forecastData = {
                 forecasts: {
                     today: daily[0],
                     weekly: daily.slice(1)
                 },
                 coordinates
-            })
-            setApiError('');
+            };
+            setForecastElement(<ForecastViewer weatherData={forecastData}/>)
         } else {
-            setApiError('Weather api error occurred. Please try again later');
+            setForecastElement(<div>Weather api error occurred. Please try again later</div>)
         }
     }
+
+    const onCityInputSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        history.push(`/${cityName}`);
+        initForecasts(cityName);
+    };
 
     return (
         <div>
@@ -42,21 +45,11 @@ function Home() {
                 <CityInput
                     city={cityName}
                     onChange={(e) => setCityName(e.target.value)}
-                    onSubmit={ async (e) => {
-                        e.preventDefault();
-                        history.push(`/${cityName}`);
-                        initForecasts(cityName);
-                    }}
+                    onSubmit={ onCityInputSubmit }
                 />
             </div>
             <div className="forecasts-container">
-                {
-                    apiErrorMessage
-                    ? <div>{apiErrorMessage}</div>
-                    : weatherData
-                    ? <ForecastViewer weatherData={weatherData}/>
-                    : <div>Enter city name and submit to view forecast</div>
-                }
+                {forecastElement}
             </div>
         </div>
     );
